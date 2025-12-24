@@ -198,6 +198,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &54858355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54858356}
+  - component: {fileID: 54858359}
+  - component: {fileID: 54858358}
+  - component: {fileID: 54858357}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &54858356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54858355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 460089594}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.84900004, y: 0.47287157}
+  m_AnchorMax: {x: 0.84900004, y: 0.47287157}
+  m_AnchoredPosition: {x: -9, y: 78.869}
+  m_SizeDelta: {x: 533.9484, y: 397.5105}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &54858357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54858355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3917f9ebfd275ba4ebf384b1431cca17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateOnlyX
+  speed: 20
+--- !u!114 &54858358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54858355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b57c3a4588883784da9f894d8cc31f7e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &54858359
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54858355}
+  m_CullTransparentMesh: 1
 --- !u!1 &191456545
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,8 +550,8 @@ RectTransform:
   m_Children:
   - {fileID: 262352375}
   - {fileID: 1419998161}
-  - {fileID: 955795432}
   - {fileID: 469262851}
+  - {fileID: 54858356}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -504,7 +593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309, y: -54}
+  m_AnchoredPosition: {x: -329.3, y: -95}
   m_SizeDelta: {x: 858.6, y: 665.4009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469262852
@@ -528,14 +617,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Svemirska stanica povezuje temu cinije s njenom historijskom ulogom u
-    istra\u017Eivanju svemira.\n\nKlikom na model svemirskog broda korisniku se prikazuje
-    slika i pokre\u0107e videozapis eksperimenta u kojem je cinija 2016. godine postala
-    prva biljka uzgojena u svemiru na Me\u0111unarodnoj svemirskoj stanici.\n\nOvaj
-    dio aplikacije nagla\u0161ava otpornost biljke i njeno sna\u017Eno simboli\u010Dno
-    zna\u010Denje \u2013 \u017Eivot i rast \u010Dak i u ekstremnim uslovima."
+    istra\u017Eivanju svemira.\n\nKlikom na model svemirskog broda u AR sceni korisniku
+    se prikazuje slika i pokre\u0107e videozapis eksperimenta u kojem je cinija 2016.
+    godine postala prva biljka uzgojena u svemiru na Me\u0111unarodnoj svemirskoj
+    stanici.\n\nOvaj dio aplikacije nagla\u0161ava otpornost biljke i njeno sna\u017Eno
+    simboli\u010Dno zna\u010Denje \u2013 \u017Eivot i rast \u010Dak i u ekstremnim
+    uslovima."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
-  m_sharedMaterial: {fileID: -2448759590284002852, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
+  m_sharedMaterial: {fileID: -2607274462539708923, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -565,7 +655,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -597,7 +687,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -318.05127, w: 0}
+  m_margin: {x: 0, y: 0, z: -238.46246, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -610,81 +700,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469262850}
-  m_CullTransparentMesh: 1
---- !u!1 &955795431
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 955795432}
-  - component: {fileID: 955795434}
-  - component: {fileID: 955795433}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &955795432
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955795431}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 460089594}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.864354, y: 0.71000004}
-  m_AnchorMax: {x: 0.864354, y: 0.71000004}
-  m_AnchoredPosition: {x: -12.781677, y: -107.149}
-  m_SizeDelta: {x: 479.3721, y: 399.5141}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &955795433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955795431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b57c3a4588883784da9f894d8cc31f7e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &955795434
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955795431}
   m_CullTransparentMesh: 1
 --- !u!1 &1082049916
 GameObject:
@@ -826,6 +841,7 @@ GameObject:
   - component: {fileID: 1419998163}
   - component: {fileID: 1419998162}
   - component: {fileID: 1419998165}
+  - component: {fileID: 1419998166}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -958,6 +974,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd23cc74c0c4e54190179bb597b813b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UFOPOI
+--- !u!114 &1419998166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419998160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

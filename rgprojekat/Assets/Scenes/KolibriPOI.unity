@@ -578,13 +578,14 @@ MonoBehaviour:
   m_text: "Kolibri predstavlja opra\u0161iva\u010Da i prirodnog prijatelja Cinije.
     \n\nKada korisnik dodirne 3D model kolibrija, prikazuje se tekst koji govori
     o zna\u010Daju opra\u0161ivanja i slika kolibrija koji opra\u0161uje cvijet.
-    \n\nAnimacija mahanja krilima prikazuje realisti\u010Dnu scenu i upotpunjuje
-    prostorni ambijent. Ova interakcija obja\u0161njava ulogu kolibrija u procesu
-    opra\u0161ivanja i prikazuje me\u0111uzavisnost biljaka i \u017Eivotinja u ekosistemu.\nElement
-    i animacija kolibrija daje aplikaciji dinami\u010Dnost i dodatni edukativni sloj."
+    Sve je to pra\u0107eno specifi\u010Dnim zvukom krila.\n\nAnimacija mahanja krilima
+    prikazuje realisti\u010Dnu scenu i upotpunjuje prostorni ambijent. Ova interakcija
+    obja\u0161njava ulogu kolibrija u procesu opra\u0161ivanja i prikazuje me\u0111uzavisnost
+    biljaka i \u017Eivotinja u ekosistemu.\nElement i animacija kolibrija daje aplikaciji
+    dinami\u010Dnost i dodatni edukativni sloj."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
-  m_sharedMaterial: {fileID: -2448759590284002852, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
+  m_sharedMaterial: {fileID: -2607274462539708923, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -614,7 +615,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -673,6 +674,7 @@ GameObject:
   - component: {fileID: 1692705417}
   - component: {fileID: 1692705416}
   - component: {fileID: 1692705419}
+  - component: {fileID: 1692705420}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -805,6 +807,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a61bde71411c0c42b2256c71a06eb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KolibriPOI
+--- !u!114 &1692705420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692705414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1 &1781011631
 GameObject:
   m_ObjectHideFlags: 0

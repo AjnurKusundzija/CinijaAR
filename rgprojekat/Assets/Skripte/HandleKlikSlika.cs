@@ -16,7 +16,11 @@ public class HandleKlikSlika : MonoBehaviour
     private VideoPlayer videoPlayer;
     private InputAction tapAction;
 
-    // ?? klju?na varijabla
+    [Header("SFX")]
+    [SerializeField] private AudioClip clickClip;          // kratki klik (one-shot)
+    [SerializeField] private AudioSource drugiZvukSource;  // duži zvuk (toggle Play/Stop)
+
+    // klju?na varijabla
     private bool isShown = false;
 
     void Awake()
@@ -49,8 +53,25 @@ public class HandleKlikSlika : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (hit.collider.CompareTag("Slika"))
+            // RADI i ako je tag na parentu, a collider na childu
+            Transform t = hit.collider.transform;
+            while (t != null && !t.CompareTag("Slika"))
+                t = t.parent;
+
+            if (t != null)
             {
+                // 1) kratki klik (uvijek)
+                if (SfxPlayer.Instance != null && clickClip != null)
+                    SfxPlayer.Instance.Play(clickClip);
+
+                // 2) toggle "drugog" (dužeg) zvuka
+                if (drugiZvukSource != null)
+                {
+                    if (drugiZvukSource.isPlaying) drugiZvukSource.Stop();
+                    else drugiZvukSource.Play();
+                }
+
+                // 3) tvoja postoje?a logika
                 ToggleImageAndVideo();
             }
         }
@@ -60,7 +81,7 @@ public class HandleKlikSlika : MonoBehaviour
     {
         isShown = !isShown;
 
-        // SLika
+        // Slika
         if (plane != null)
             plane.SetActive(isShown);
 

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 109131202}
   - component: {fileID: 109131201}
   - component: {fileID: 109131200}
+  - component: {fileID: 109131204}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -264,6 +265,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109131198}
   m_CullTransparentMesh: 1
+--- !u!114 &109131204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109131198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1 &132217467
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +364,7 @@ GameObject:
   - component: {fileID: 399932754}
   - component: {fileID: 399932756}
   - component: {fileID: 399932755}
+  - component: {fileID: 399932757}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -373,8 +388,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.82911116, y: 0.5194815}
   m_AnchorMax: {x: 0.82911116, y: 0.5194815}
-  m_AnchoredPosition: {x: 52.275, y: 103.76}
-  m_SizeDelta: {x: 527.12, y: 416.2}
+  m_AnchoredPosition: {x: 49.558167, y: 83.7186}
+  m_SizeDelta: {x: 663.0475, y: 490.5071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399932755
 MonoBehaviour:
@@ -396,7 +411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae7a1b22665bb494b85781503e67421f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec43b6620869b31428853e75f7e3fe64, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -414,6 +429,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399932753}
   m_CullTransparentMesh: 1
+--- !u!114 &399932757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399932753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775779d2721ab5646a4b335c30d6e054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateSunUI
+  rotationSpeed: 20
 --- !u!1 &877901959
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,8 +695,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -171.99, y: -42.834}
-  m_SizeDelta: {x: 1185.2, y: 743.9143}
+  m_AnchoredPosition: {x: -171.99, y: -60.9654}
+  m_SizeDelta: {x: 1185.2, y: 707.6516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203455816
 MonoBehaviour:
@@ -691,15 +719,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Sunce u aplikaciji simbolizuje glavni izvor \u017Eivota i energije neophodne
-    za rast biljaka.\n\nKlikom na model Sunca korisniku se prikazuje kratko obja\u0161njenje
-    procesa fotosinteze, u kojem biljke koriste sun\u010Devu svjetlost za stvaranje
-    hrane i energije potrebne za razvoj.\n\nAnimacija svjetlosnih zraka vizualno
-    prikazuje prijenos sun\u010Deve energije, \u010Dime se prirodni procesi povezuju
-    s edukativnim sadr\u017Eajem aplikacije i poma\u017Eu korisnicima da lak\u0161e
-    razumiju biolo\u0161ku pozadinu rasta cvijeta."
+    za rast biljaka.\n\nKlikom na model Sunca u AR sceni korisniku se prikazuje kratko
+    obja\u0161njenje procesa fotosinteze, u kojem biljke koriste sun\u010Devu svjetlost
+    za stvaranje hrane i energije potrebne za razvoj.\n\nAnimacija svjetlosnih zraka
+    vizualno prikazuje prijenos sun\u010Deve energije, \u010Dime se prirodni procesi
+    povezuju s edukativnim sadr\u017Eajem aplikacije i poma\u017Eu korisnicima da
+    lak\u0161e razumiju biolo\u0161ku pozadinu rasta cvijeta."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
-  m_sharedMaterial: {fileID: -2448759590284002852, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
+  m_sharedMaterial: {fileID: -2607274462539708923, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -729,7 +757,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -761,7 +789,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 1.7268219}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

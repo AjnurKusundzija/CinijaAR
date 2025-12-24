@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 388024958}
   - component: {fileID: 388024957}
   - component: {fileID: 388024960}
+  - component: {fileID: 388024961}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -264,6 +265,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a61bde71411c0c42b2256c71a06eb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KolibriPOI
+--- !u!114 &388024961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388024955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1 &605014048
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,10 +508,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u2022 Klikni Cvijet Cinije za ulazak u AR re\u017Eim\n\u2022 Usmjeri
     kameru prema marker slici\n\u2022 Pomjeraj telefon za pregled 3D modela\n\u2022
-    Dodirni POI ikone za dodatne edukativne informacije"
+    Dodirni POI ikone za dodatne edukativne informacije\n\u2022 Provjeri svoje znanje
+    kroz kratki kviz"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
-  m_sharedMaterial: {fileID: -2448759590284002852, guid: db19b3bb97efae24594dc5396dc8f662, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
+  m_sharedMaterial: {fileID: -2607274462539708923, guid: 139bd36b6577f624ab8da13d773c4e44, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -521,13 +536,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -559,7 +574,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 27.90532, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -586,6 +601,7 @@ GameObject:
   - component: {fileID: 1378043727}
   - component: {fileID: 1378043726}
   - component: {fileID: 1378043725}
+  - component: {fileID: 1378043729}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -609,7 +625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 750.99994, y: 362.99994}
+  m_AnchoredPosition: {x: 687, y: 363}
   m_SizeDelta: {x: 385.2648, y: 103.0025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378043725
@@ -718,6 +734,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378043723}
   m_CullTransparentMesh: 1
+--- !u!114 &1378043729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378043723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1 &1515329194
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +835,7 @@ GameObject:
   - component: {fileID: 1590895429}
   - component: {fileID: 1590895428}
   - component: {fileID: 1590895427}
+  - component: {fileID: 1590895431}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -829,7 +859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -921, y: 363}
+  m_AnchoredPosition: {x: -909, y: 349.5}
   m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590895427
@@ -938,6 +968,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590895425}
   m_CullTransparentMesh: 1
+--- !u!114 &1590895431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590895425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1 &1618689801
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +994,7 @@ GameObject:
   - component: {fileID: 1618689804}
   - component: {fileID: 1618689803}
   - component: {fileID: 1618689806}
+  - component: {fileID: 1618689807}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1083,6 +1127,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd23cc74c0c4e54190179bb597b813b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UFOPOI
+--- !u!114 &1618689807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618689801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1 &1726292034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,6 +1416,7 @@ GameObject:
   - component: {fileID: 1924226250}
   - component: {fileID: 1924226249}
   - component: {fileID: 1924226252}
+  - component: {fileID: 1924226253}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1491,6 +1549,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74bb34affb06ff547b3fdd2a3fba711e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuncePOI
+--- !u!114 &1924226253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924226247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f22352b3d6844d963e53907f3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KlikDugme
+  clickClip: {fileID: 8300000, guid: 527a6b5635427904bb3bb5eee7c11444, type: 3}
 --- !u!1 &1943729362
 GameObject:
   m_ObjectHideFlags: 0

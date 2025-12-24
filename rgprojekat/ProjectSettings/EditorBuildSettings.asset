@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KolibriPOI.unity
     guid: 7ccf9a9099b57a04c8daac94dad31c41
+  - enabled: 1
+    path: Assets/Scenes/Kviz.unity
+    guid: 9401a4aad1fdff64facc997dc5fe4e0a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8695833016dce1e4897780cc0a9241f4, type: 2}

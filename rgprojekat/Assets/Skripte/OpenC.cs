@@ -6,7 +6,13 @@ public class OpenC : MonoBehaviour
     public GameObject tekst;
     public Camera arCamera;
     public GameObject slika;
-    public AudioSource zvuk;
+    public AudioSource zvuk; // tvoj postoje?i POI zvuk
+
+    [SerializeField] private AudioClip clickClip; // kratki klik (one-shot)
+
+    // DODANO: AudioSource za "drugi zvuk" koji se pali/gasi (Play/Stop)
+    [SerializeField] private AudioSource drugiZvukSource;
+
     private InputAction tapAction;
 
     void Awake()
@@ -38,25 +44,32 @@ public class OpenC : MonoBehaviour
         {
             if (hit.collider.CompareTag("Oprasivanje"))
             {
-                ShowInfoAndPlaySound();
+                // 1) kratki klik (uvijek)
+                if (SfxPlayer.Instance != null && clickClip != null)
+                    SfxPlayer.Instance.Play(clickClip);
 
+                // 2) toggle "drugog" (dužeg) zvuka
+                if (drugiZvukSource != null)
+                {
+                    if (drugiZvukSource.isPlaying) drugiZvukSource.Stop();
+                    else drugiZvukSource.Play();
+                }
+
+                // 3) tvoja postoje?a logika (slika/tekst + POI zvuk)
+                ShowInfoAndPlaySound();
             }
         }
     }
+
     void ShowInfoAndPlaySound()
     {
         bool isActive = slika != null && slika.activeSelf;
 
         if (!isActive)
         {
-            
-            if (slika != null)
-                slika.SetActive(true);
+            if (slika != null) slika.SetActive(true);
+            if (tekst != null) tekst.SetActive(true);
 
-            if (tekst != null)
-                tekst.SetActive(true);
-
-           
             if (zvuk != null)
             {
                 zvuk.Stop();
@@ -65,17 +78,10 @@ public class OpenC : MonoBehaviour
         }
         else
         {
-            
-            if (slika != null)
-                slika.SetActive(false);
+            if (slika != null) slika.SetActive(false);
+            if (tekst != null) tekst.SetActive(false);
 
-            if (tekst != null)
-                tekst.SetActive(false);
-
-            
-            if (zvuk != null)
-                zvuk.Stop();
+            if (zvuk != null) zvuk.Stop();
         }
     }
-
 }

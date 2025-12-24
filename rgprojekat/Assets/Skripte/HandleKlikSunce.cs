@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public class HandleKlikSunce : MonoBehaviour
 {
     public GameObject tekst;
-    public Camera arCamera;   // ? Vuforia / AR kamera
-
+    public Camera arCamera;
+    // ? Vuforia / AR kamera
+    [SerializeField] private AudioClip clickClip;
     private InputAction tapAction;
 
     void Awake()
@@ -35,10 +37,20 @@ public class HandleKlikSunce : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (hit.collider.CompareTag("Sun"))
+            // 1) Na?i root koji nosi tag Sun (radi i kad collider nije na tagovanom objektu)
+            Transform root = hit.collider.transform;
+            while (root != null && !root.CompareTag("Sun"))
+                root = root.parent;
+
+            if (root != null) // zna?i pogodio si nešto unutar Sunca
             {
-                tekst.SetActive(!tekst.activeSelf);
+                if (SfxPlayer.Instance != null && clickClip != null)
+                    SfxPlayer.Instance.Play(clickClip);
+
+                if (tekst != null)
+                    tekst.SetActive(!tekst.activeSelf);
             }
         }
     }
+
 }
