@@ -1,79 +1,76 @@
-# 🌸 CinijaAR
+# CinijaAR
 
-Ovaj repozitorij sadrži **mobilnu edukativnu aplikaciju baziranu na proširenoj stvarnosti (AR)**, razvijenu u Unity okruženju. Projekat omogućava korisnicima da kroz interaktivno AR iskustvo istraže **cvijet Cinija (Zinnia elegans)**, njegovu biologiju, ekološku ulogu i historijski značaj.
+This repository contains a mobile educational application based on Augmented Reality (AR), developed using the Unity engine. The project enables users to explore the Zinnia flower (Zinnia elegans) through an interactive AR experience, learning about its biology, ecological role, and historical significance.
 
-Aplikacija spaja **tehnologiju, biologiju i edukaciju**, nudeći moderan i intuitivan način učenja.
-
----
-
-## 🎯 Cilj projekta
-
-Glavni ciljevi projekta su:
-- primjena **AR tehnologije u edukativne svrhe**
-- vizuelno i interaktivno objašnjavanje prirodnih procesa  
-- povezivanje 3D grafike i multimedije sa stvarnim svijetom  
-- unapređenje korisničkog iskustva u učenju biologije  
+The application combines technology, biology, and education to provide a modern and intuitive learning experience.
 
 ---
 
-## 🧠 Opis aplikacije
+## Project Goal
 
-Nakon pokretanja aplikacije, korisniku se prikazuje početni ekran sa osnovnim kontrolama. Ulaskom u AR režim, kamera prepoznaje marker i prikazuje **3D model cvijeta Cinije** u stvarnom prostoru.
-
-Korisnik može:
-- istraživati cvijet iz različitih uglova  
-- aktivirati interaktivne tačke (POI)  
-- učiti kroz tekst, animacije, slike, zvuk i video sadržaj  
-
----
-
-## 📍 Points of Interest (POI)
-
-U blizini cvijeta nalaze se tri interaktivne POI tačke:
-
-### 🐦 Kolibri
-- Predstavlja oprašivača i njegovu ulogu u ekosistemu  
-- Aktivira animaciju, zvuk i edukativni tekst o oprašivanju  
-
-### ☀️ Sunce
-- Simbolizuje izvor energije za rast biljaka  
-- Prikazuje objašnjenje fotosinteze uz svjetlosne animacije  
-
-### 🚀 Svemirska stanica
-- Povezuje ciniju sa njenom historijskom ulogom u svemiru  
-- Prikazuje sliku i video eksperimenta uzgoja cinije na ISS-u (2016.)  
+The main objectives of the project are:
+- applying AR technology for educational purposes
+- visually and interactively explaining natural processes
+- connecting 3D graphics and multimedia with the real world
+- improving user experience in learning biology
 
 ---
 
-## ✨ Funkcionalnosti
+## Application Description
 
-- 📱 AR prikaz pomoću image recognition tehnologije  
-- 🌼 Detaljno modeliran 3D cvijet Cinije  
-- 🎵 Ambijentalni zvuk (on/off)  
-- 🖼️ Scene sa sliderom za prikaz faza razvoja modela  
-- ℹ️ Info stranica sa pravilima korištenja i dodatnim sadržajem  
+After launching the application, users are presented with a start screen containing basic controls. When entering AR mode, the camera recognizes a marker and displays a 3D model of the Zinnia flower within the real environment.
 
----
-
-## 🛠️ Tehnologije
-
-- **Unity Engine**
-- **C#**
-- **AR tehnologija (Image Target / AR Camera)**
-- **3D modeliranje i animacija**
-- **Multimedijalni sadržaj (tekst, slika, video, zvuk)**
+Users can:
+- explore the flower from different viewing angles
+- activate interactive Points of Interest (POI)
+- learn through text, animations, images, audio, and video content
 
 ---
 
+## Points of Interest (POI)
 
+Three interactive POI elements are positioned around the flower:
 
-Kroz AR iskustvo, korisnici lakše razumiju procese poput **fotosinteze, oprašivanja i rasta biljaka**.
+### Hummingbird
+Represents a pollinator and its ecological role.  
+Activates animation, sound, and educational content explaining pollination.
+
+### Sun
+Symbolizes the energy source required for plant growth.  
+Provides an explanation of photosynthesis supported by light-based animations.
+
+### Space Station
+Connects the Zinnia flower to its historical role in space research.  
+Displays images and video material related to the Zinnia growth experiment conducted on the International Space Station in 2016.
 
 ---
 
-## 👤 Autor
+## Features
 
-**Ajnur Kušundžija**  
-Elektrotehnički fakultet  
-Predmet: Računarska grafika  
+- AR visualization using image recognition technology
+- Detailed 3D model of the Zinnia flower
+- Ambient sound with on/off control
+- Scene slider presenting development stages of the model
+- Information page with usage instructions and additional content
 
+---
+
+## Technologies
+
+- Unity Engine
+- C#
+- Augmented Reality (Image Target / AR Camera)
+- 3D modeling and animation
+- Multimedia content (text, images, video, audio)
+
+---
+
+Through the AR experience, users gain a clearer understanding of processes such as photosynthesis, pollination, and plant growth.
+
+---
+
+## Author
+
+Ajnur Kušundžija  
+Faculty of Electrical Engineering  
+Course: Computer Graphics
